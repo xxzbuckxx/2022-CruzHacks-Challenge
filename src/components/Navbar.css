@@ -1,0 +1,11 @@
+.navbar {
+    padding: 0px;
+    height: 68px;
+    background-color: #061118;
+    text-align: left;
+}
+
+.icon {
+    margin-left: 22px;
+    margin-top: 10px;
+}
