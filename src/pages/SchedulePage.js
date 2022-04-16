@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './SchedulePage.css';
-import Schedule from '../components/Schedule.js';
+import ScheduleSlider from '../components/ScheduleSlider';
 
 async function getSchedule() {
     const apiURL = 'https://cruzhacks23-organizer-endpoint.herokuapp.com/api/schedule';
@@ -26,8 +26,7 @@ function SchedulePage() {
     return (
         <div className="body background">
             <div className="site">
-                <h1>Schedule</h1>
-                {schedules.map(s => <Schedule key={s.date} date={s.date} events={s.events}/>)}
+                <ScheduleSlider schedules={schedules} />
             </div>
         </div>
     );

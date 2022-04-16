@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import './Schedule.css';
+import PopupForm from './PopupForm.js';
 
 function Schedule(props) {
 
@@ -7,20 +8,18 @@ function Schedule(props) {
 
 	return (
 		<div className="Schedule">
-            <h2>Firday, January 14, 2023</h2>
-            {props.events.map(event => <li key={event.name}>{event.name}, {event.time}</li>)}
-            {/* <table>
+            <h2>{props.date}</h2>
+            <table>
                 <tbody>
-                    <tr>
-                        <td>9:00 AM</td>
-                        <td>Adding a Backend and Databse to Your App in 3 Lines</td>
-                    </tr>
-                    <tr>
-                        <td>10:00 AM</td>
-                        <td>Intro to Algorithm / Applications</td>
-                    </tr>
+                    {props.events.map((event, index) => 
+                        <tr key={index}>
+                            <td className="eventDate" key={event.name}>{event.time}</td>
+                            <td className="eventName">{event.name}</td>
+                            {/* <PopupForm name="Test Name"/> */}
+                        </tr>
+                    )}
                 </tbody>
-            </table> */}
+            </table>
 		</div>
 	)
 }

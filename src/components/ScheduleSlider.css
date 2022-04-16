@@ -1,0 +1,42 @@
+h1 {
+    margin: 0px;
+}
+.slider {
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+}
+.left-arrow {
+    display: inline-block;
+    position: relative;
+    top: 120px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.right-arrow {
+    display: inline-block;
+    position: relative;
+    top: 120px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    display: inline-block;
+    opacity: 0;
+    transform: scale(0.92);
+    transition-duration: 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transform: scale(1);
+}
+

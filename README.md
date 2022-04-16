@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# CruzHacks Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Unfortunately I did not get to finish the challenge, although I came pretty close.
+
+Tasks:
+- [X] Create Components
+	- [X] Navbar
+	- [X] Page
+	- [X] Slider
+	- [X] Popup Form
+- [X] Fetch API
+- [X] Create carousel slider
+- [ ] Clickable schedule popup
+- [ ] Style Responsively
+- [ ] Cleanup and documentation
+
+I would have liked to get the popup working and add more responive css but
+unfortunately I was a bit too busy.
 
 ## Available Scripts
 
